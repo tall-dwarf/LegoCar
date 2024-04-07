@@ -124,4 +124,96 @@
   font-weight: 400;
   line-height: 14.5px;
   color: rgb(102, 102, 102);
+}
+
+.services-item {
+  border-radius: 12px;
+  background: linear-gradient(87.14deg, rgba(18, 18, 18, 0.6) 3.289%, rgba(0, 0, 0, 0) 96.307%), url("../images/services-bg.png"), rgb(217, 217, 217);
+  position: relative;
+  overflow: hidden;
+  padding: 32px;
+}
+.services-item__title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+.services-item__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 32px;
+  position: relative;
+  z-index: 1;
+}
+.services-item__btn {
+  position: relative;
+  z-index: 1;
+}
+.services-item__img {
+  position: absolute;
+  z-index: 1;
+}
+.services-item-bg-icon {
+  position: absolute;
+  background-color: rgba(18, 18, 18, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+.services-list {
+  display: grid;
+  grid-template-areas: "diagnostics online estimation" "diagnostics booking estimation";
+  grid-template-rows: 250px 250px;
+  gap: 12px;
+}
+.services-diagnostics {
+  grid-area: diagnostics;
+}
+.services-diagnostics > .services-item__img {
+  bottom: 13px;
+  left: 10px;
+}
+.services-online {
+  grid-area: online;
+  background: linear-gradient(87.14deg, rgba(18, 18, 18, 0.6) 0.831%, rgba(0, 0, 0, 0) 99.067%), url("../images/services-bg.png"), rgb(217, 217, 217);
+}
+.services-online > .services-item__img {
+  bottom: -20px;
+  right: -50px;
+}
+.services-online > .services-item-bg-icon {
+  width: 195px;
+  height: 195px;
+  bottom: 0;
+  right: 50px;
+}
+.services-booking {
+  grid-area: booking;
+  background: url("../images/services-bg.png"), linear-gradient(87.14deg, rgba(18, 18, 18, 0.6) 0.831%, rgba(0, 0, 0, 0) 99.067%), rgb(217, 217, 217);
+}
+.services-booking > .services-item__img {
+  bottom: -50%;
+  right: -5px;
+}
+.services-estimation {
+  grid-area: estimation;
+}
+.services-estimation > .services-item__img {
+  bottom: 20px;
+  right: 0px;
+  max-width: 347px;
+}
+.services-estimation > .services-item-bg-icon {
+  width: 331px;
+  height: 331px;
+  bottom: -50px;
+  left: -50px;
 }/*# sourceMappingURL=style.css.map */

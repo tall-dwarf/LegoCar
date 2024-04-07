@@ -5,12 +5,38 @@
     box-sizing: border-box
     font-family: "Inter", sans-serif
 
-@mixin font($size, $weight, $line: 1.2, $color: #fff)
+$color-azure: rgb(11, 69, 127)
+
+@mixin font($size, $weight, $line, $color: #fff)
     font-size: $size
     font-weight: $weight
     line-height: $line
     color: $color
 
+body
+    background-color: rgba(0, 0, 0, 0.4)
+
 .container
     max-width: 1296px
     margin: 0 auto
+
+.btn
+    @include font(14px, 500, 24px)
+    border-radius: 12px
+    border: none
+    cursor: pointer
+    transition: all 0.2s
+    &-azure
+        background-color: $color-azure
+        padding: 8px 42px
+        &:hover
+            background-color: rgb(0, 108, 216)
+
+    &-transparent
+        line-height: 17px
+        background-color: transparent
+        padding: 14px 28px
+        border: 1px solid #fff
+        &:hover
+            background-color: rgba(255, 255, 255, 0.2)
+    

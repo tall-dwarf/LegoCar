@@ -390,4 +390,7 @@
     color: rgb(255, 255, 255);
     margin-bottom: 0px;
   }
+  .header-nav {
+    z-index: 2;
+  }
 }/*# sourceMappingURL=style.css.map */

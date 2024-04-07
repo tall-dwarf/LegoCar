@@ -14,7 +14,8 @@ $color-azure: rgb(11, 69, 127)
     color: $color
 
 body
-    background-color: rgba(0, 0, 0, 0.4)
+    background-color: rgb(180, 180, 180)
+    padding: 10px
 
 .container
     max-width: 1296px
@@ -40,3 +41,33 @@ body
         &:hover
             background-color: rgba(255, 255, 255, 0.2)
     
+
+.burger
+    width: 26px
+    height: 18px
+    cursor: pointer
+    position: relative
+    &-line
+        transition: all 0.3s
+        height: 2px
+        width: 100%
+        background-color: $color-azure
+        position: absolute
+
+        &-first
+            top: 0
+        &-second
+            top: 8px
+        &-end
+            bottom: 0
+
+    &--open > .burger-line-first
+        top: 8px
+        transform: rotate(135deg)
+
+    &--open > .burger-line-end  
+        bottom: 8px
+        transform: rotate(-135deg)
+
+    &--open > .burger-line-second
+        opacity: 0

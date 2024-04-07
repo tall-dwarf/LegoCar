@@ -126,6 +126,17 @@
   color: rgb(102, 102, 102);
 }
 
+.services {
+  padding-top: 56px;
+}
+.services__title {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  color: rgb(62, 62, 62);
+  margin: 0px;
+  margin-bottom: 32px;
+}
 .services-item {
   border-radius: 12px;
   background: linear-gradient(87.14deg, rgba(18, 18, 18, 0.6) 3.289%, rgba(0, 0, 0, 0) 96.307%), url("../images/services-bg.png"), rgb(217, 217, 217);

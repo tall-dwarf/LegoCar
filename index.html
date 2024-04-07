@@ -28,14 +28,19 @@
                     <img src="./images/logo.png" alt="Логотип сайта">
                 </a>
                 <div class="header-menu">
-                    <nav class="nav">
+                    <nav class="nav header-nav">
                         <a class="nav-link" href="/">Автомобили в наличии</a>
                         <a class="nav-link" href="/">Спецпредложения</a>
                         <a class="nav-link" href="/">Продать авто</a>
                         <a class="nav-link" href="/">Сервис</a>
                         <a class="nav-link" href="/">Контакты</a>
                     </nav>
-                    <button class="btn btn-azure">Заказать звонок</button>
+                    <div role="button" class="burger header-burger">
+                        <div class="burger-line burger-line-first"></div>
+                        <div class="burger-line burger-line-second"></div>
+                        <div class="burger-line burger-line-end"></div>
+                    </div>
+                    <button class="btn btn-azure header-btn">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -99,6 +104,25 @@
             </ul>
         </div>
     </main>
+
+    <script>
+        const burger = document.querySelector(".header-burger")
+        const headerNav = document.querySelector(".header-nav")
+
+        headerNav.addEventListener("click", (event) => {
+            event.stopPropagation()
+        })
+
+        burger.addEventListener("click", (event) => {
+            event.stopPropagation()
+            headerNav.classList.add("header-nav--open")
+        })
+        
+        document.addEventListener("click", () => {
+            headerNav.classList.remove("header-nav--open")
+        })
+
+    </script>
 
 </body>
 </html>

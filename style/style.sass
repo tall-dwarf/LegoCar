@@ -232,7 +232,8 @@ $color-azure: rgb(11, 69, 127)
         right: 0
         left: auto
         bottom: 0px
-
+    .services-estimation > .services-item-bg-icon
+        display: none
     .services-online > .services-item-bg-icon
         display: none
 
@@ -246,4 +247,84 @@ $color-azure: rgb(11, 69, 127)
     .services-estimation > .services-item__img
         max-width: 217px
         bottom: 0px
+    .services__title
+        max-width: 603px
 
+
+@media screen and (max-width: 899px)
+    .container
+        max-width: 680px
+    .header-footer
+        display: none
+    .header-hr
+        display: none
+
+    .services-list
+        grid-template-areas:"diagnostics" "online" "booking" "estimation"
+
+    .services-item
+        background-size: cover
+
+    .services-diagnostics > .services-item__img
+        max-width: 287px
+        right: 20px
+
+    .services-online > .services-item__img
+        max-width: 287px
+        right: 20px
+
+    .services-booking
+        background: linear-gradient(87.14deg, rgba(18, 18, 18, 0.6) 0.284%,rgba(0, 0, 0, 0) 99.681%), url("../images/services-bg.png"),rgb(217, 217, 217)
+        background-size: cover
+
+    .services-booking > .services-item__img
+        max-width: 100%
+        top: 18%
+        bottom: auto
+        
+    .services-estimation > .services-item__img
+        max-width: 287px
+
+    .services-item__title
+        max-width: 338px
+    .services-item__subtitle
+        max-width: 306px
+
+@media screen and (max-width: 599px)
+    .container
+        max-width: 335px
+    .header-btn
+        display: none
+    .services__title
+        @include font(16px, 500, 19px, rgb(62, 62, 62))
+    .services
+        padding-top: 36px
+    .services-item
+        padding: 16px
+        justify-content: space-between
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+
+    .services-list
+        grid-template-rows: repeat(4, 204px)
+
+    .services-item > .services-item__img
+        max-width: 149px
+        right: 8px
+    .services-online > .services-item__img
+        right: -20px
+        bottom: -5px
+    .services-booking > .services-item__img
+        max-width: 100px
+        bottom: -40%
+        top: auto
+
+    .services-item__title
+        @include font(16px, 500, 22px, rgb(255, 255, 255))
+        margin-bottom: 0px
+    .services-item__subtitle
+        @include font(14px, 400, 18px, rgb(255, 255, 255))
+        margin-bottom: 0px
+        
+        
